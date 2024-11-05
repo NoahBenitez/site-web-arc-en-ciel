@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page d'accueil</title>
+    <link rel="stylesheet" href="main.css"> 
+</head>
+<body>
+    <header>
+        <nav>
+            <header class="header">
+                <div class="overlay"></div>
+                <div class="header-content">
+                    <h1 class="logo">ARC-EN-CIEL <br> <span>gallery</span></h1>
+                    <nav class="navbar">
+            <ul class="menu">
+                <li><a href="Accueil.html">Home</a></li>
+                <li><a href="Peinture.html">Peinture</a>
+                    <ul class="sousmenu">
+                        <li><a href="emerald green.html">emerald green</a></li>
+                        <li><a href="brown.html">Acrylic Brown</a></li>
+                        <li><a href="blue.html">Cylian Blue</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Big moments</a>
+                    <ul class="sousmenu">
+                        <li><a href="#">Sous-menu 1</a></li>
+                        <li><a href="#">Sous-menu 2</a></li>
+                        <li><a href="#">Sous-menu 3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Music</a>
+                    <ul class="sousmenu">
+                        <li><a href="#">Sous-menu 1</a></li>
+                        <li><a href="#">Sous-menu 2</a></li>
+                        <li><a href="#">Sous-menu 3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <title>Carousel d'Images</title>
+    <style>
+        /* Styles pour le conteneur du carousel */
+        .carousel-container {
+            width: 30%; /* Réduit la largeur du carousel */
+            max-width: 200px; /* Limite la taille maximale */
+            margin: 20px 0 20px auto; /* Positionné à droite avec margin auto */
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Styles pour les images */
+        .carousel-images {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+            width: 100%;
+        }
+
+        .carousel-images img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        /* Boutons pour naviguer manuellement */
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 5px;
+            cursor: pointer;
+            border-radius: 50%;
+            z-index: 1;
+            font-size: 12px;
+        }
+
+        .prev {
+            left: 5px;
+        }
+
+        .next {
+            right: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="carousel-container">
+        <div class="carousel-images">
+            <a href="brown.html"><img src="https://www.apyart.com/1285-thickbox_default/peinture-pour-artiste-marron.jpg" alt="Image 1"></a>
+            <a href="emerald green.html"><img src="https://www.solidbackgrounds.com/images/2880x1800/2880x1800-emerald-solid-color-background.jpg" alt="Image 2"></a>
+            <a href="blue.html"><img src="https://th.bing.com/th/id/R.661e8ee862bf259d833dc9a745c33e14?rik=DqpI1cexIbbVgQ&riu=http%3a%2f%2fwww.publicdomainpictures.net%2fpictures%2f40000%2fvelka%2ffondo-color-cian.jpg&ehk=u7yLpl0nTJmiNfHPtC1%2fQ3w77F12sKgEGSQ2hSi5nqA%3d&risl=&pid=ImgRaw&r=0" alt="Image 3"></a>
+            <a href="grey.html"><img src="https://www.clicjedecore.com/22133-large_default/papier-peint-uni-gris-perle-hygge-caselio-hyg69869111.jpg" alt="Image 1"></a>
+        </div>
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
+    </div>
+    
+
+<script>
+    let currentIndex = 0;
+
+    function showSlide(index) {
+        const slides = document.querySelector('.carousel-images');
+        const totalSlides = slides.children.length;
+
+        if (index >= totalSlides) {
+            currentIndex = 0;
+        } else if (index < 0) {
+            currentIndex = totalSlides - 1;
+        } else {
+            currentIndex = index;
+        }
+
+        const offset = -currentIndex * 100;
+        slides.style.transform = `translateX(${offset}%)`;
+    }
+
+    function nextSlide() {
+        showSlide(currentIndex + 1);
+    }
+
+    function prevSlide() {
+        showSlide(currentIndex - 1);
+    }
+
+    // Défilement automatique
+    setInterval(nextSlide, 3000); // Change d'image toutes les 3 secondes
+</script>
+
+
+    <div class="container">
+        <h4>Emerald Green</h4>
+
+        <!-- Deuxième image alignée à droite -->
+        <img src="https://th.bing.com/th/id/R.661e8ee862bf259d833dc9a745c33e14?rik=DqpI1cexIbbVgQ&riu=http%3a%2f%2fwww.publicdomainpictures.net%2fpictures%2f40000%2fvelka%2ffondo-color-cian.jpg&ehk=u7yLpl0nTJmiNfHPtC1%2fQ3w77F12sKgEGSQ2hSi5nqA%3d&risl=&pid=ImgRaw&r=0" alt="Emerald Green" width="450" height="200" class="right">
+
+        <!-- Biographie divisée en sections -->
+        <section>
+            <h5>Origines et Jeunesse</h5>
+            <p>Kirk Hammett est né à San Francisco d'une mère originaire des Philippines et d'un père irlandais travaillant dans le transport maritime. Alors qu'il travaillait dans un Burger King pour payer son matériel de musique, Kirk devint élève dans une école de musique dont un des professeurs est le guitariste Joe Satriani.</p>
+        </section>
+
+        <section>
+            <h5>Début de Carrière</h5>
+            <p>Il commence sa carrière de guitariste en 1981 en cofondant le groupe Exodus qu'il quitte en 1983 avant l'enregistrement de leur premier album pour rejoindre Metallica qui vient de renvoyer Dave Mustaine juste avant l'enregistrement de leur premier opus, Kill 'Em All. Dave Mustaine fondera par la suite le groupe Megadeth, qui sera cité dans les « Big Four » du thrash metal.</p>
+        </section>
+    </div>
+    <title>Page avec Background Changeant</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font: 12px Arial;
+            background-size: cover; /* L'image couvrira toute la page */
+            background-position: center; /* L'image sera centrée */
+            background-repeat: no-repeat; /* L'image ne sera pas répétée */
+            transition: background-image 1s ease-in-out; /* Transition douce entre les images */
+        }
+
+        /* Votre style existant pour le corps de la page */
+        /* Autres styles comme dans votre code actuel */
+    </style>
+</head>
+<body>
+
+<!-- Contenu de votre page -->
+<!-- Placez ici le reste de votre code HTML -->
+
+<script>
+    // Tableau des URL des images de fond
+    const backgrounds = [
+        'https://img.freepik.com/photos-premium/explosion-peinture-vibrante-explosion-creativite-coloree-creee-technologie-ia-generative_27525-20448.jpg',
+        'https://ak.picdn.net/shutterstock/videos/24419024/thumb/8.jpg',
+        'https://img.freepik.com/photos-premium/foret-magique-lumiere-soleil_1150-17303.jpg'
+        // Ajoutez d'autres URL d'images ici
+    ];
+
+    let currentBackgroundIndex = 0;
+
+    function changeBackground() {
+        currentBackgroundIndex = (currentBackgroundIndex + 1) % backgrounds.length;
+        document.body.style.backgroundImage = `url(${backgrounds[currentBackgroundIndex]})`;
+    }
+
+    // Change l'image de fond toutes les 5 secondes
+    setInterval(changeBackground, 5000);
+</script>
+  
+               
+                <footer>
+                    <div class="footer-container">
+                        <div class="footer-section about">
+                            <h2>À propos</h2>
+                            <p>Nous sommes une entreprise dédiée à fournir les meilleurs services à nos clients, avec une attention particulière à la qualité et à la satisfaction.</p>
+                        </div>
+                        <div class="footer-section links">
+                            <h2>Liens utiles</h2>
+                            <ul>
+                                <li><a href="#">Accueil</a></li>
+                                <li><a href="#">Services</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">À propos</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-section contact">
+                            <h2>Contact</h2>
+                            <p>Email: arc-en-cien@gmail.com</p>
+                            <p>Téléphone: +0783212044</p>
+                            <div class="social-icons">
+                                <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                                <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+                                <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-bottom">
+                        &copy; 2024 VotreEntreprise | Tous droits réservés
+                    </div>
+                </footer>
+                
+    </section>
+</main>
+</body>
+<main>
+   

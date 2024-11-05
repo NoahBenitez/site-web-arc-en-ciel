@@ -1,0 +1,711 @@
+body {
+    margin: 0;
+    padding: 0;
+    font: 12px Arial;
+}
+    /* Styles pour les conteneurs de texte et d'image */
+.container {
+  margin-bottom: 20px;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.text {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.image {
+  flex: 1;
+  text-align: right;
+}
+
+.image img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+/* Assurez-vous que les images ne débordent pas */
+body {
+  font-family: 'Algerian', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-image 1s ease-in-out;
+}
+
+.menu {
+    height: 60px;
+    list-style: none;
+    padding: 10px;
+    margin: 40px;
+}
+
+.menu li {
+    float: left;
+    width: 200px;
+}
+
+/* Style général pour le header */
+/* Style général pour le header transparent */
+.transparent-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(14, 14, 14, 2); /* Transparent black background */
+  color: #fff;
+  padding: 20px 0;
+  font-family: Arial, sans-serif;
+  z-index: 1000; /* Make sure the header stays on top of other elements */
+}
+
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Header styling */
+.header {
+  position: relative;
+  height: 250px;
+  background: url('your-image-path.jpg') no-repeat center center/cover; /* Use your image path */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent dark overlay */
+  z-index: 1;
+}
+
+.header-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: #fff;
+}
+
+/* Logo styling */
+.logo {
+  font-size: 36px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.logo span {
+  font-size: 14px;
+  letter-spacing: 2px;
+  display: block;
+  font-style: italic;
+}
+
+/* Navbar styling */
+.navbar ul {
+  list-style: none;
+  margin-top: 15px;
+}
+
+.navbar ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  color: #cccccb; /* Highlight color */
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Style pour le logo */
+.logo h1 {
+  font-size: 24px;
+  margin: 0;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Style pour la navigation */
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar ul li {
+  margin-left: 30px;
+}
+
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px;
+  transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+  color: #d7d7d7;
+}
+
+/* Style pour le bouton d'appel à l'action (CTA) */
+.cta .btn {
+  background-color: #000000;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.cta .btn:hover {
+  background-color: #cac9c8;
+}
+
+/* Ajout d'un effet de transparence sur les éléments */
+.transparent-header .logo h1,
+.transparent-header .navbar ul li a,
+.transparent-header .cta .btn {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.transparent-header .navbar ul li a:hover {
+  color: rgba(0, 0, 0, 0.9);
+}
+
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Style pour le logo */
+.logo h1 {
+  font-size: 24px;
+  margin: 0;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Style pour la navigation */
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar ul li {
+  margin-left: 30px;
+}
+
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px;
+  transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+  color: #e1e1e1;
+}
+
+/* Style pour le bouton d'appel à l'action (CTA) */
+.cta .btn {
+  background-color: #cacac9;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.cta .btn:hover {
+  background-color: #d4d4d4;
+}
+
+
+.menu .sousmenu {
+    list-style-type: none;
+    display: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+}
+.image-right {
+  float: right; /* Aligne l'image à droite du contenu */
+  margin-left: 20px; /* Ajoute un espace entre l'image et le texte */
+  width: 300px; /* Largeur de l'image */
+  height: auto; /* Hauteur ajustée automatiquement */
+  border-radius: 30px; /* Ajoute des coins arrondis */
+  object-fit: cover; /* Assure que l'image s'ajuste bien dans le conteneur */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Ajoute une ombre légère */
+}
+/* Styles pour les images du carousel */
+.carousel-images {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+.carousel-images img {
+  width: 600px; /* Augmentez la largeur de l'image */
+  height: 400px; /* Ajoutez une hauteur adaptée à la nouvelle taille */
+  border-radius: 25px;
+}
+
+.menu .sousmenu li {
+    float: none;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid transparent;
+    border-right: 1px solid transparent;
+}
+
+
+.menu .sousmenu li a:link, .menu li a:visited {
+    display: block;
+    color: #bfbfbf;
+    text-decoration: none;
+    background-color: #d8d2d2;
+}
+
+
+/* Styles pour le conteneur du carousel */
+.carousel-container {
+  width: 450px; /* Largeur du carrousel */
+  position: relative; /* Fixe la position du carousel */
+  margin: 75% auto; /* Centre le carousel horizontalement */
+  top: 50%; /* Centre le carousel verticalement par rapport à son conteneur parent */
+  transform: translateY(-50%); /* Centre le carousel verticalement */
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+/* Styles pour les images du carousel */
+.carousel-images {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+.carousel-images img {
+  width: 100%;
+  height: auto; /* Garde le ratio d'aspect des images */
+  border-radius: 25px;
+}
+
+/* Boutons pour naviguer manuellement */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 15px; /* Augmente la taille des boutons */
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 1;
+  font-size: 20px; /* Augmente la taille du texte dans les boutons */
+}
+
+.prev {
+  left: 20px; /* Ajuste la position du bouton de navigation à gauche */
+}
+
+.next {
+  right: 80px; /* Ajuste la position du bouton de navigation à droite */
+}
+
+/* Boutons pour naviguer manuellement */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 1;
+  font-size: 18px;
+}
+
+.prev {
+  left: 10px; /* Positionne le bouton de navigation à gauche du carrousel */
+}
+
+.next {
+  right: 10px; /* Positionne le bouton de navigation à droite du carrousel */
+}
+
+
+.menu li:hover .sousmenu {
+    display: block;
+}
+body {
+  margin: 14;
+  padding: 14;
+  font: 55px Arial;
+  background-image: url('https://img.freepik.com/photos-premium/explosion-peinture-vibrante-explosion-creativite-coloree-creee-technologie-ia-generative_27525-20448.jpg');
+  background-size: cover; /* L'image couvrira toute la page */
+  background-position: center; /* L'image sera centrée */
+  background-repeat: no-repeat; /* L'image ne sera pas répétée */
+  
+  }
+  
+  h3 {
+    font: 18px Arial;
+    font-family: "Old London", sans-serif;
+     color: rgb(242, 231, 232);
+     text-shadow:
+-1px -1px 1px #220707,
+0px 4px 1px rgba(0, 0, 0, 0.5),
+4px 4px 5px rgba(0, 0, 0, 0.7),
+0px 0px 7px rgba(0, 0, 0, 0.4);
+ }
+ 
+
+body{
+ h1 {
+    font: 20px Arial;
+     color: rgb(228, 228, 228);
+     text-shadow:
+-1px -1px 1px #000000,
+0px 4px 1px rgba(0, 0, 0, 0.5),
+4px 4px 5px rgba(0, 0, 0, 0.7),
+0px 0px 7px rgba(0, 0, 0, 0.4);
+ }
+ .container {
+     display: flex; /* Utilisation de Flexbox pour aligner les éléments */
+     justify-content: space-between; /* Les éléments sont espacés uniformément sur la ligne */
+     
+   }
+   
+}
+body
+h1 {
+    font: 20px Arial;
+      color: rgb(239, 236, 237);
+     text-shadow:
+-1px -1px 1px #000000,
+0px 4px 1px rgba(0, 0, 0, 0.5),
+4px 4px 5px rgba(0, 0, 0, 0.7),
+0px 0px 7px rgba(0, 0, 0, 0.4);
+
+
+ }
+ img.right {
+    float: right;
+    margin: 10px;
+    width: 200px; /* Assurez-vous que l'image est carrée */
+    height: 200px; /* Assurez-vous que l'image est carrée */
+    border-radius: 50%; /* Transforme l'image en cercle */
+    object-fit: cover; /* Assure que l'image s'ajuste bien dans le conteneur */
+  }
+  body{
+    p {
+        font: 17px Arial;
+        color: rgb(255, 255, 255);
+        text-shadow:
+  -1px -1px 1px #000000,
+  0px 4px 1px rgba(0, 0, 0, 0.5),
+  4px 4px 5px rgba(0, 0, 0, 0.7),
+  0px 0px 7px rgba(0, 0, 0, 0.4);
+    }
+    .container {
+        display: flex; /* Utilisation de Flexbox pour aligner les éléments */
+        justify-content: space-between; /* Les éléments sont espacés uniformément sur la ligne */
+        
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        font: 12px Arial;
+        background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(139, 69, 19, 0.5), rgba(245, 222, 179, 0.3)), no-repeat center center fixed;
+        background-size: cover;
+        transition: background 1s ease-in-out;
+    }
+  
+    
+    
+  }
+  body
+   p {
+    font: 17px algerian;
+         color: rgb(224, 224, 224);
+        text-shadow:
+  -1px -1px 1px #000000,
+  0px 4px 1px rgba(0, 0, 0, 0.5),
+  4px 4px 5px rgba(0, 0, 0, 0.7),
+  0px 0px 7px rgba(0, 0, 0, 0.4);
+   }
+  
+  nav ul{
+  
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  nav li {
+    list-style-type: y;
+    padding: 10px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+  }
+  
+  
+    nav li {
+        list-style: none;
+        float: left;
+  }
+  nav li a::after {
+    display: inline-block;
+    color: #0c0b0b;
+    content: '>';
+    font-size: 10%;
+    font-weight: bold;
+  
+  }
+  li a {
+  
+  
+    display: block;
+    color: rgb(2, 2, 1);
+    text-align: 20px 16px;
+    text-decoration: none;
+  }  
+  body
+   h5 {
+    font: 20px Arial;
+         color: rgb(227, 224, 224);
+        text-shadow:
+  -1px -1px 1px #aaa,
+  0px 4px 1px rgba(0, 0, 0, 0.5),
+  4px 4px 5px rgba(0, 0, 0, 0.7),
+  0px 0px 7px rgba(0, 0, 0, 0.4);
+   }
+  
+  body
+h2 {
+    font: 20px Arial;
+      color: rgb(204, 204, 204);
+     text-shadow:
+-1px -1px 1px #aaa,
+0px 4px 1px rgba(0, 0, 0, 0.5),
+4px 4px 5px rgba(0, 0, 0, 0.7),
+0px 0px 7px rgba(0, 0, 0, 0.4);
+
+
+ }
+ 
+ body {
+  margin: 0;
+  padding: 0;
+  font: 12px Arial;
+}
+/* CSS for the small image */
+.small-right {
+  width: 50px; /* Adjust width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-left: 10px; /* Space between text and image */
+  vertical-align: middle; /* Align image vertically with text */
+}
+
+.menu {
+  height: 60px;
+  list-style: none;
+  padding: 10px;
+  margin: 40px;
+}
+
+/* Styles pour les menus */
+.menu li {
+  float: left;
+  width: 200px;
+}
+
+
+
+
+
+.menu .sousmenu {
+  list-style-type: none;
+  display: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+}
+
+.menu .sousmenu li {
+  float: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid transparent;
+  border-right: 1px solid transparent;
+}
+
+.menu .sousmenu li a:link, .menu li a:visited {
+  display: block;
+  color: #efefef;
+  text-decoration: none;
+  background-color: #010000;
+}
+
+.menu .sousmenu li a:hover {
+  background-color: #000000;
+}
+
+.menu li:hover .sousmenu {
+  display: block;
+}
+
+.container {
+  position: relative; /* Relative positioning for the container */
+  padding: 20px;
+}
+
+.text-container {
+  position: relative; /* Ensure text container is positioned relatively */
+}
+
+.bottom-right-image {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
+  right: 0; /* Align to the right of the container */
+  bottom: 0; /* Align to the bottom of the container */
+  margin: 10px; /* Add some margin */
+}
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 0;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-section {
+  flex: 1;
+  padding: 20px;
+}
+
+.footer-section h2 {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.footer-section p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: #bbb;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #fff;
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-icons img {
+  width: 32px;
+  height: 32px;
+  filter: invert(1); /* Convertit les icônes en blanc */
+  transition: transform 0.3s;
+}
+
+.social-icons a:hover img {
+  transform: scale(1.1);
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 20px;
+  background-color: #222;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+

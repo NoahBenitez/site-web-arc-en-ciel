@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page d'accueil</title>
+    <link rel="stylesheet" href="main.css"> 
+    <style>
+
+        
+
+body {
+            font-family: 'Algerian', sans-serif;
+        }
+
+
+        /* Applique la police Algerian à tout le texte de la page */
+       
+        .container {
+            margin-bottom: 20px;
+        }
+
+        .right {
+            float: right;
+            margin-left: 20px;
+            border-radius: 8px;
+        }
+
+        section {
+            clear: both;
+        }
+
+        /* Ajouter du style pour le pied de page si nécessaire */
+    </style>
+</head>
+<style>
+    /* Style for the main menu */
+.sousmenu {
+    list-style-type: none; /* Remove bullets */
+    padding: 0;
+    margin: 0;
+}
+
+/* Style for the nested submenu */
+.sousmenu li {
+    position: relative; /* Allows absolute positioning of the image */
+}
+
+/* Style for the submenu images */
+.submenu-img {
+    width: 60px; /* Fixed width for the images */
+    height: 40px; /* Fixed height for the images */
+    position: absolute; /* Absolute positioning */
+    top: 50%; /* Center vertically */
+    right: -70px; /* Position to the right of the submenu item */
+    transform: translateY(-50%); /* Center vertically */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visibility */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+
+</style>
+<body>
+    <header class="header">
+        <div class="overlay"></div>
+        <div class="header-content">
+            <h1 class="logo">ARC-EN-CIEL <br> <span>gallery</span></h1>
+            <nav class="navbar">
+                <ul class="menu">
+                    <li><a href="Accueil.html">Home</a></li>
+                    <li><a href="Peinture.html">Peinture</a>
+                        <ul class="sousmenu">
+                            <li><a href="emerald green.html">Emerald Green</a>
+                                <ul class="sousmenu">
+                                    <li><a href="green1.html">Light Green</a></li>
+                                    <li><a href="green2.html">Medium Green</a></li>
+                                    <li><a href="green3.html">Dark Green</a></li>
+                                    <li><a href="green4.html">Olive Green</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="brown.html">Acrylic Brown</a>
+                                <ul class="sousmenu">
+                                    <li><a href="brown1.html">Light Brown</a></li>
+                                    <li><a href="brown2.html">Medium Brown</a></li>
+                                    <li><a href="brown3.html">Dark Brown</a></li>
+                                    <li><a href="brown4.html">Burnt Sienna</a></li>
+                                   
+                                </ul>
+                            </li>
+                            <li><a href="grey.html">Grey Pearl</a>
+                                <ul class="sousmenu">
+                                    <li><a href="grey1.html">Light Grey</a></li>
+                                    <li><a href="grey2.html">Medium Grey</a></li>
+                                    <li><a href="grey3.html">Dark Grey</a></li>
+                                    <li><a href="grey4.html">Slate Grey</a></li>
+                                    
+                                </ul>
+                            </li>
+                           
+                           
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="parquets.html">Parquets</a>
+                        <ul class="sousmenu">
+                            <li>
+                                <a href="sapin.html">Sapin</a>
+                                <ul class="sousmenu">
+                                    <li>
+                                        <a href="sapin1.html">Sapin des neiges</a>
+                                        <!-- Image for Sapin des neiges -->
+                                        <img src="https://media.cdn.saint-maclou.com/90755_1_S3.jpg" alt="Emerald Green" class="submenu-img">
+                                    </li>
+                                    <li>
+                                        <a href="sapin2.html">Sapin classique</a>
+                                        <!-- Image for Sapin classique -->
+                                        <img src="https://media.cdn.saint-maclou.com/90756_1_S3.jpg" alt="Pine Green" class="submenu-img">
+                                    </li>
+                                    <li>
+                                        <a href="sapin3.html">Sapin forestier</a>
+                                        <!-- Image for Sapin forestier -->
+                                        <img src="https://media.cdn.saint-maclou.com/90757_1_S3.jpg" alt="Forest Green" class="submenu-img">
+                                    </li>
+                                    <li>
+                                        <a href="sapin4.html">Sapin Blanc clair</a>
+                                        <!-- Image for Sapin forestier -->
+                                        <img src="https://www.cotesol-parquet.com/wp-content/uploads/pin-blanc-clair-universal-brosse-ver-1200x1200.webp" alt="Forest Green" class="submenu-img">
+                                    </li>
+                                    <li>
+                                        <a href="sapin5.html">Sapin saint-maclou</a>
+                                        <!-- Image for Sapin forestier -->
+                                        <img src="https://forestpanels.com/wp-content/uploads/2022/01/iVALO-21.jpg" alt="Forest Green" class="submenu-img">
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="chene.html">Chene</a>
+                                <ul class="sousmenu">
+                                    <li>
+                                        <a href="chene1.html">Chêne Massif</a>
+                                        <img src="https://www.carresol-parquet.com/9363-home_default/parquet-chene-massif-brut-damier-mosaique-premier.jpg" alt="Chêne Massif" class="submenu-img">
+                                    </li>
+                                    <li>
+                                        <a href="chene2.html">Chêne Rustique</a>
+                                        <img src="https://static.leondo.fr/media/image/99/c6/bb/l4021133_38XDwmJ4xTVj1f.jpg" alt="Chêne Rustique" class="submenu-img">
+                                    </li>
+                                    <li>
+                                        <a href="chene3.html">Chêne Blanc</a>
+                                        <img src="https://cdn.webshopapp.com/shops/278246/files/445011050/meister-pd-400-eik-harmonisch-polar-wit-9008.jpg" alt="Chêne Blanc" class="submenu-img">
+                                    </li>
+                                    <li>
+                                        <a href="chene4.html">Chêne Vieilli</a>
+                                        <img src="https://www.bca-materiauxanciens.com/wp-content/uploads/2013/12/00272_5.jpg" alt="Chêne Vieilli" class="submenu-img">
+                                    </li>
+                                    <li>
+                                        <a href="chene5.html">Chêne Clair</a>
+                                        <img src="https://www.idparquet.fr/files/2017/01/mj3550_1_2_35880cfbe17017.jpg" alt="Chêne Clair" class="submenu-img">
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="marbre.html">Marbre</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Music</a>
+                        <ul class="sousmenu">
+                            <li><a href="#">Sous-menu 1</a></li>
+                            <li><a href="#">Sous-menu 2</a></li>
+                            <li><a href="#">Sous-menu 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+</body>
+
+    </header>
+    <title>Page avec Background Changeant</title>
+    
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font: 12px Arial;
+            background-size: cover; /* L'image couvrira toute la page */
+            background-position: center; /* L'image sera centrée */
+            background-repeat: no-repeat; /* L'image ne sera pas répétée */
+            transition: background-image 1s ease-in-out; /* Transition douce entre les images */
+        }
+
+        /* Votre style existant pour le corps de la page */
+        /* Autres styles comme dans votre code actuel */
+    </style>
+</head>
+<body>
+
+<!-- Contenu de votre page -->
+<!-- Placez ici le reste de votre code HTML -->
+
+<script>
+    // Tableau des URL des images de fond
+    const backgrounds = [
+        'https://img.freepik.com/photos-premium/explosion-peinture-vibrante-explosion-creativite-coloree-creee-technologie-ia-generative_27525-20448.jpg',
+        'https://ak.picdn.net/shutterstock/videos/24419024/thumb/8.jpg',
+        'https://img.freepik.com/photos-premium/foret-magique-lumiere-soleil_1150-17303.jpg'
+        // Ajoutez d'autres URL d'images ici
+    ];
+
+    let currentBackgroundIndex = 0;
+
+    function changeBackground() {
+        currentBackgroundIndex = (currentBackgroundIndex + 1) % backgrounds.length;
+        document.body.style.backgroundImage = `url(${backgrounds[currentBackgroundIndex]})`;
+    }
+
+    // Change l'image de fond toutes les 5 secondes
+    setInterval(changeBackground, 5000);
+</script>
+    <title>Carousel d'Images</title>
+    <style>
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+
+        .footer-section {
+            flex: 1;
+            margin-right: 20px;
+        }
+
+        .footer-section h2 {
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-section ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer-section ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .social-icons img {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding: 10px;
+            background-color: #222;
+            color: white;
+            font-size: 14px;
+        }
+
+        .payment-methods {
+            display: flex;
+            align-items: center;
+        }
+
+        .payment-methods img {
+            width: 40px; /* Réduit la taille des logos */
+            margin-right: 10px;
+        }
+       </style>
+       
+       
+    
+                <style>
+                    body {
+                        font-family: 'Algerian', sans-serif;
+                        margin: 0;
+                        padding: 0;
+                    }
+            
+                    .header-content h1 {
+                        text-align: center;
+                        font-size: 2.5em;
+                        margin-bottom: 10px;
+                    }
+            
+                    .container {
+                        display: flex; /* Flexbox pour aligner le texte et le carrousel */
+                        justify-content: space-between; /* Espace égal entre les éléments */
+                        align-items: center; /* Aligne les éléments verticalement au centre */
+                        margin: 20px;
+                        height: 400px; /* Hauteur uniforme pour le conteneur */
+                    }
+            
+                    .text-content {
+                        flex: 1; /* Le texte prendra autant d'espace que possible */
+                        margin-right: 20px;
+                        text-align: justify;
+                        line-height: 1.6;
+                        font-size: 1.1em;
+                    }
+            
+                    .carousel-container {
+                        width: 85%; /* Ajuste la largeur selon tes besoins */
+                        flex: 0.6; /* Ajuste la taille du carrousel par rapport au texte */
+                        height: 100%; /* S'assure que le carrousel prend toute la hauteur du conteneur */
+                        overflow: hidden;
+                        border-radius: 30px;
+                        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                        position: relative;
+                    }
+            
+                    .carousel-images {
+                        display: flex;
+                        height: 100%;
+                        width: calc(100% * 6);
+                        transition: transform 4s ease-in-out;
+                    }
+            
+                    .carousel-images img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        border-radius: 30px;
+                    }
+            
+                    .prev, .next {
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        background-color: rgba(0, 0, 0, 0.5);
+                        color: white;
+                        border: none;
+                        padding: 5px;
+                        cursor: pointer;
+                        border-radius: 50%;
+                        z-index: 1;
+                    }
+            
+                    .prev {
+                        left: 10px;
+                    }
+            
+                    .next {
+                        right: 10px;
+                    }
+                </style>
+            </head>
+            <body>
+            
+                <main>
+                    <div class="container">
+                        <h1>Chene Rustique</h1>
+            
+                        <!-- Deuxième image alignée à droite -->
+                        <a href="chene1.html"><img src="https://static.leondo.fr/media/image/99/c6/bb/l4021133_38XDwmJ4xTVj1f.jpg" alt="Emerald Green" width="450" height="200" class="right"></a>
+            
+                        <div class="h1">
+                            <h1>Voici nos différentes rénovation effectuer lors de notre parcours</h1>
+                            <p>Aujourd'hui, j'ai l'honneur de vous parler d'un art délicat mais essentiel : la rénovation d'une peinture. Loin d'être un simple processus technique, la restauration d'une œuvre d'art est une discipline qui marie à la fois la science, l'histoire, et un immense respect pour le patrimoine artistique.
+                    
+                                Une peinture, quelle que soit sa renommée, est un témoin silencieux du temps. Avec les années, l'usure est inévitable : la lumière, l'humidité, les variations de température, et même les manipulations humaines peuvent altérer les couleurs, craqueler la surface ou affaiblir la toile.</p>
+                            <style>
+                                .h1 {
+                                    position: absolute;
+                                    top: 450px; /* Ajuste la valeur pour descendre le texte */
+                                    left: 0px;
+                                    right: 450px;
+                                    text-align: center; /* Centrer le texte horizontalement */
+                                }
+                                .p {
+                                     position: absolute;
+                                    top: 450px; /* Ajuste la valeur pour descendre le texte */
+                                    left: 0px;
+                                    right: 450px;
+                                    text-align: center; /* Centrer le texte horizontalement */
+                    
+                                }
+                            </style>
+                    
+                         </div>
+            
+                        <style>
+                            /* Style du conteneur du carrousel */
+                            .carousel-container {
+                                    width: 42%; /* Ajuste la largeur selon tes besoins */
+                                    height: 350px; /* Ajuste la hauteur selon tes besoins */
+                                    margin: 20px auto; /* Centre le carrousel sur la page */
+                                    margin-top: -25%;
+                                    margin: 20px 0 20px auto; /* Positionné à droite avec margin auto */
+                                    margin-bottom: 2%;
+                                    overflow: hidden;
+                                    border-radius: 30px; /* Bordures arrondies */
+                                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                                    position: relative;
+                                }
+                        
+                                /* Images du carrousel */
+                                .carousel-images {
+                                    display: flex;
+                                    width: 650%;
+                                    height: 250%;
+                                    transition: transform 8s ease-in-out;
+                                }
+                        
+                                .carousel-images img {
+                                    width: 650%;
+                                    height: 250%;
+                                    object-fit: cover; /* Assure que l'image couvre tout l'espace */
+                                    border-radius: 30px;
+                                }
+                        
+                                /* Flèches de navigation */
+                                .prev, .next {
+                                    position: absolute;
+                                    transform: translateY(-50%);
+                                    background-color: rgba(0, 0, 0, 0.5);
+                                    color: white;
+                                    padding: 10px;
+                                    cursor: pointer;
+                                    border: none;
+                                    border-radius: 50%;
+                                }
+                        
+                                .prev {
+                                    left: 10px;
+                                }
+                        
+                                .next {
+                                    right: 50px;
+                                }
+                        
+                        </style>
+                        
+                        
+                       
+                                    
+                      <main>
+                      
+                    
+                        <div class="container">
+                            
+                         </div>
+                         
+                         <div class="carousel-container">
+                            <div class="carousel-images">
+                                <a href="chene.html"><img src="https://www.carresol-parquet.com/9363-home_default/parquet-chene-massif-brut-damier-mosaique-premier.jpg" alt="Sapin 1"></a>
+                                <a href="chene1.html"><img src="https://static.leondo.fr/media/image/99/c6/bb/l4021133_38XDwmJ4xTVj1f.jpg" alt="Sapin 2"></a>
+                                <a href="chene3.html"><img src="https://cdn.webshopapp.com/shops/278246/files/445011050/meister-pd-400-eik-harmonisch-polar-wit-9008.jpg" alt="Sapin 3"></a>
+                                <a href="chne4.html"><img src="https://www.bca-materiauxanciens.com/wp-content/uploads/2013/12/00272_5.jpg" alt="Sapin 4"></a>
+                                <a href="chene5.html"><img src="https://www.idparquet.fr/files/2017/01/mj3550_1_2_35880cfbe17017.jpg" alt="Sapin 5"></a>
+                            </div>
+                            <button class="prev" onclick="prevSlide()">&#10094;</button>
+                            <button class="next" onclick="nextSlide()">&#10095;</button>
+                        </div>
+                        
+                            
+                           
+                           <script>
+                    const carouselImages = document.querySelector('.carousel-images');
+                    const images = document.querySelectorAll('.carousel-images img');
+                    let currentIndex = 0;
+                
+                    function nextSlide() {
+                        currentIndex = (currentIndex + 1) % images.length;
+                        carouselImages.style.transform = `translateX(-${currentIndex * 100}%)`;
+                    }
+                
+                    function prevSlide() {
+                        currentIndex = (currentIndex - 1 + images.length) % images.length;
+                        carouselImages.style.transform = `translateX(-${currentIndex * 100}%)`;
+                    }
+                
+                    // Automatique toutes les 10 secondes (10000 millisecondes)
+                    setInterval(nextSlide, 10000);  // Change la valeur ici pour ajuster la vitesse
+                </script>
+                
+                           
+                    </body>
+           
+        </div>
+
+       
+                            <div class="container">
+                                <!-- Contenu ici -->
+                            </div>
+                            
+                        </div>
+                       
+                       
+               
+          
+        </div>
+    </main>
+
+    <body>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-section about">
+                    <h2>À propos</h2>
+                    <p>Nous sommes une entreprise dédiée à fournir les meilleurs services à nos clients, avec une attention particulière à la qualité et à la satisfaction.</p>
+                </div>
+                <div class="footer-section links">
+                    <h2>Liens utiles</h2>
+                    <ul>
+                        <li><a href="#">Accueil</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">À propos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section contact">
+                    <h2>Contact</h2>
+                    <p>Email: arc-en-cien@gmail.com</p>
+                    <p>Téléphone: +0783212044</p>
+                    <div class="social-icons">
+                        <a href="#"><img src="https://www.pngmart.com/files/23/Facebook-Logo-PNG-Isolated-HD.png" alt="Facebook"></a>
+                        <a href="#"><img src="https://store-images.s-microsoft.com/image/apps.60673.9007199266244427.4d45042b-d7a5-4a83-be66-97779553b24d.5d82b7eb-9734-4b51-b65d-a0383348ab1b" alt="Twitter"></a>
+                        <a href="https://www.instagram.com/arcenciel.peinture/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/1200px-Instagram_logo_2016.svg.png" alt="Instagram"></a>
+                    </div>
+                </div>
+                <div class="footer-section payment">
+                    <h2>Moyens de paiement</h2>
+                    <div class="payment-methods">
+                       <a href="https://www.visa.fr/"><img src="https://cdn.freebiesupply.com/logos/large/2x/visa-2-logo-png-transparent.png" alt="Visa"></a>
+                        <img src="https://logo-marque.com/wp-content/uploads/2020/09/Mastercard-Logo.png" alt="Mastercard">
+                        <a href="https://www.paypal.com/fr/home"><img src="https://logodownload.org/wp-content/uploads/2014/10/paypal-logo-0.png" alt="PayPal"></a>
+                        <!-- Ajoutez d'autres logos de paiement si nécessaire -->
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2024 VotreEntreprise | Tous droits réservés
+            </div>
+        </footer>
+    </body>
+    </html>
+
+   

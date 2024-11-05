@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page d'accueil</title>
+    <link rel="stylesheet" href="main.css"> 
+    <style>
+
+        
+
+body {
+            font-family: 'Agency FB', sans-serif;
+        }
+
+
+        /* Applique la police Algerian à tout le texte de la page */
+       
+        .container {
+            margin-bottom: 20px;
+        }
+
+        .right {
+            float: right;
+            margin-left: 20px;
+            border-radius: 8px;
+        }
+
+        section {
+            clear: both;
+        }
+
+        /* Ajouter du style pour le pied de page si nécessaire */
+    </style>
+</head>
+<body>
+    <style>
+        /* Style for the main menu */
+    .sousmenu {
+        list-style-type: none; /* Remove bullets */
+        padding: 0;
+        margin: 0;
+    }
+    
+    /* Style for the nested submenu */
+    .sousmenu li {
+        position: relative; /* Allows absolute positioning of the image */
+    }
+    
+    /* Style for the submenu images */
+    .submenu-img {
+        width: 60px; /* Fixed width for the images */
+        height: 40px; /* Fixed height for the images */
+        position: absolute; /* Absolute positioning */
+        top: 50%; /* Center vertically */
+        right: -70px; /* Position to the right of the submenu item */
+        transform: translateY(-50%); /* Center vertically */
+        border-radius: 5px; /* Rounded corners */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visibility */
+        object-fit: cover; /* Ensures the image covers the area without distortion */
+    }
+    
+    
+    </style>
+   <header class="header">
+    <div class="overlay"></div>
+    <div class="header-content">
+        <h1 class="logo">ARC-EN-CIEL <br> <span>gallery</span></h1>
+        <nav class="navbar">
+            <ul class="menu">
+                <li><a href="Accueil.html">Home</a></li>
+                <li><a href="Peinture.html">Peinture</a>
+                    <ul class="sousmenu">
+                        <li><a href="emerald green.html">Emerald Green</a>
+                            <ul class="sousmenu">
+                                <li><a href="green1.html">Light Green</a></li>
+                                <li><a href="green2.html">Medium Green</a></li>
+                                <li><a href="green3.html">Dark Green</a></li>
+                                <li><a href="green4.html">Olive Green</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="brown.html">Acrylic Brown</a>
+                            <ul class="sousmenu">
+                                <li><a href="brown1.html">Light Brown</a></li>
+                                <li><a href="brown2.html">Medium Brown</a></li>
+                                <li><a href="brown3.html">Dark Brown</a></li>
+                                <li><a href="brown4.html">Burnt Sienna</a></li>
+                               
+                            </ul>
+                        </li>
+                        <li><a href="grey.html">Grey Pearl</a>
+                            <ul class="sousmenu">
+                                <li><a href="grey1.html">Light Grey</a></li>
+                                <li><a href="grey2.html">Medium Grey</a></li>
+                                <li><a href="grey3.html">Dark Grey</a></li>
+                                <li><a href="grey4.html">Slate Grey</a></li>
+                                
+                            </ul>
+                        </li>
+                       
+                       
+                    </ul>
+                </li>
+                <li>
+                    <a href="parquets.html">Parquets</a>
+                    <ul class="sousmenu">
+                        <li>
+                            <a href="sapin.html">Sapin</a>
+                            <ul class="sousmenu">
+                                <li>
+                                    <a href="sapin1.html">Sapin des neiges</a>
+                                    <!-- Image for Sapin des neiges -->
+                                    <img src="https://media.cdn.saint-maclou.com/90755_1_S3.jpg" alt="Emerald Green" class="submenu-img">
+                                </li>
+                                <li>
+                                    <a href="sapin2.html">Sapin classique</a>
+                                    <!-- Image for Sapin classique -->
+                                    <img src="https://media.cdn.saint-maclou.com/90756_1_S3.jpg" alt="Pine Green" class="submenu-img">
+                                </li>
+                                <li>
+                                    <a href="sapin3.html">Sapin forestier</a>
+                                    <!-- Image for Sapin forestier -->
+                                    <img src="https://media.cdn.saint-maclou.com/90757_1_S3.jpg" alt="Forest Green" class="submenu-img">
+                                </li>
+                                <li>
+                                    <a href="sapin4.html">Sapin Blanc clair</a>
+                                    <!-- Image for Sapin forestier -->
+                                    <img src="https://www.cotesol-parquet.com/wp-content/uploads/pin-blanc-clair-universal-brosse-ver-1200x1200.webp" alt="Forest Green" class="submenu-img">
+                                </li>
+                                <li>
+                                    <a href="sapin5.html">Sapin saint-maclou</a>
+                                    <!-- Image for Sapin forestier -->
+                                    <img src="https://forestpanels.com/wp-content/uploads/2022/01/iVALO-21.jpg" alt="Forest Green" class="submenu-img">
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="chene.html">Chene</a></li>
+                        <li><a href="marbre.html">Marbre</a></li>
+                       
+
+                        
+                    </ul>
+                </li>
+                
+                   
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+                    
+                   
+    <title>Page avec Background Changeant</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font: 12px Arial;
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(139, 69, 19, 0.5), rgba(245, 222, 179, 0.3)), no-repeat center center fixed;
+            background-size: cover;
+            transition: background 1s ease-in-out;
+        }
+    
+        /* Autres styles existants */
+    </style>
+    
+    
+    <style>
+        
+        body {
+            margin: 0;
+            padding: 0;
+            font: 12px Arial;
+            background-size: cover; /* L'image couvrira toute la page */
+            background-position: center; /* L'image sera centrée */
+            background-repeat: no-repeat; /* L'image ne sera pas répétée */
+            transition: background-image 1s ease-in-out; /* Transition douce entre les images */
+        }
+
+        /* Votre style existant pour le corps de la page */
+        /* Autres styles comme dans votre code actuel */
+    </style>
+</head>
+<body>
+
+<!-- Contenu de votre page -->
+<!-- Placez ici le reste de votre code HTML -->
+
+
+    <title>Carousel d'Images</title>
+    <style>
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+
+        .footer-section {
+            flex: 1;
+            margin-right: 20px;
+        }
+
+        .footer-section h2 {
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-section ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer-section ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .social-icons img {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding: 10px;
+            background-color: #222;
+            color: white;
+            font-size: 14px;
+        }
+
+        .payment-methods {
+            display: flex;
+            align-items: center;
+        }
+
+        .payment-methods img {
+            width: 40px; /* Réduit la taille des logos */
+            margin-right: 10px;
+        }
+       </style>
+       
+       
+    <main>
+        <h3>Vous pourrez retrouver ici les différentes peintures de vos choix</h3>
+
+        <div class="container">
+            <h1>Marron</h1>
+         
+            <!-- Deuxième image alignée à droite -->
+            <a href="brown.html"><img src="https://www.apyart.com/1285-thickbox_default/peinture-pour-artiste-marron.jpg" alt="Emerald Green" width="450" height="200" class="right"></a>
+            
+
+
+            <!-- Biographie divisée en sections -->
+            <section>
+            
+                <div class="p">
+                    
+                    
+                    <style>
+                        
+                        .container {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+}
+
+.right {
+    float: right;
+    margin-left: 15px;
+}
+
+.h1 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.text-content {
+    position: absolute;
+    top: 600px;
+    left: 0;
+    right: 450px;
+    text-align: justify; /* Justifier le texte pour compacter */
+    margin: 0 20px; /* Ajout de marges sur les côtés */
+    line-height: 1.5; /* Compacter légèrement les lignes */
+    font-size: 14px; /* Ajuster la taille pour la rendre plus compacte */
+    word-wrap: break-word; /* Casser les longs mots pour éviter le débordement */
+}
+
+                    </style>
+            
+                 </div>
+               
+            </section>
+            <div class="container">
+                <!-- Contenu ici -->
+            </div>
+        </main>
+    </body>
+
+        <div class="container">
+            <h1>Vert</h1>
+
+            <!-- Deuxième image alignée à droite -->
+            <a href="emerald green.html"><img src="https://www.solidbackgrounds.com/images/2880x1800/2880x1800-emerald-solid-color-background.jpg" alt="Emerald Green" width="450" height="200" class="right"></a>
+
+            <!-- Biographie divisée en sections -->
+            <section>
+                
+                <div class="p">
+                   <style>
+                        
+                        .container {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+}
+
+.right {
+    float: right;
+    margin-left: 15px;
+}
+
+.h1 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.text-content {
+    position: absolute;
+    top: 600px;
+    left: 0;
+    right: 450px;
+    text-align: justify; /* Justifier le texte pour compacter */
+    margin: 0 20px; /* Ajout de marges sur les côtés */
+    line-height: 1.5; /* Compacter légèrement les lignes */
+    font-size: 14px; /* Ajuster la taille pour la rendre plus compacte */
+    word-wrap: break-word; /* Casser les longs mots pour éviter le débordement */
+}
+
+                    </style>
+            
+                 </div>
+               
+            </section>
+            <div class="container">
+                <!-- Contenu ici -->
+            </div>
+        </main>
+    </body>
+    <body>
+        <style>
+            /* Style du conteneur du carrousel */
+            .carousel-container {
+                    width: 65%; /* Ajuste la largeur selon tes besoins */
+                    height: 350px; /* Ajuste la hauteur selon tes besoins */
+                    margin: 20px auto; /* Centre le carrousel sur la page */
+                    margin-top: -25%;
+                    margin: 20px 0 20px auto; /* Positionné à droite avec margin auto */
+                    margin-bottom: 2%;
+                    overflow: hidden;
+                    border-radius: 30px; /* Bordures arrondies */
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                    position: relative;
+                }
+        
+                /* Images du carrousel */
+                .carousel-images {
+                    display: flex;
+                    width: 150%;
+                    height: 150%;
+                    transition: transform 1s ease-in-out;
+                }
+        
+                .carousel-images img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover; /* Assure que l'image couvre tout l'espace */
+                    border-radius: 30px;
+                }
+        
+                /* Flèches de navigation */
+                .prev, .next {
+                    position: absolute;
+                    transform: translateY(-50%);
+                    background-color: rgba(0, 0, 0, 0.5);
+                    color: white;
+                    padding: 10px;
+                    cursor: pointer;
+                    border: none;
+                    border-radius: 50%;
+                }
+        
+                .prev {
+                    left: 10px;
+                }
+        
+                .next {
+                    right: 50px;
+                }
+        
+        </style>
+        
+        
+       
+                    
+      <main>
+      
+    
+        <div class="container">
+            
+         </div>
+         
+         <div class="carousel-container">
+            <div class="carousel-images">
+                <img src="https://mademoisellelaura.fr/wp-content/uploads/2020/05/palette-de-couleurs-1024x682.jpg" alt="Image 1">
+                <img src="https://www.apyart.com/1285-thickbox_default/peinture-pour-artiste-marron.jpg" alt="Image 1">
+                <img src="https://www.solidbackgrounds.com/images/2880x1800/2880x1800-emerald-solid-color-background.jpg" alt="Image 1">
+                <img src="https://th.bing.com/th/id/R.661e8ee862bf259d833dc9a745c33e14?rik=DqpI1cexIbbVgQ&riu=http%3a%2f%2fwww.publicdomainpictures.net%2fpictures%2f40000%2fvelka%2ffondo-color-cian.jpg&ehk=u7yLpl0nTJmiNfHPtC1%2fQ3w77F12sKgEGSQ2hSi5nqA%3d&risl=&pid=ImgRaw&r=0" alt="Image 2">
+                <img src="https://www.clicjedecore.com/22133-large_default/papier-peint-uni-gris-perle-hygge-caselio-hyg69869111.jpg" alt="Image 3">
+                
+            </div>
+            
+            <!-- Flèches de navigation -->
+            <button class="prev" onclick="prevSlide()">&#10094;</button>
+            <button class="next" onclick="nextSlide()">&#10095;</button>
+            </div>
+    
+           <script>
+    const carouselImages = document.querySelector('.carousel-images');
+    const images = document.querySelectorAll('.carousel-images img');
+    let currentIndex = 0;
+
+    function nextSlide() {
+        currentIndex = (currentIndex + 1) % images.length;
+        carouselImages.style.transform = `translateX(-${currentIndex * 100}%)`;
+    }
+
+    function prevSlide() {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        carouselImages.style.transform = `translateX(-${currentIndex * 100}%)`;
+    }
+
+    // Automatique toutes les 10 secondes (10000 millisecondes)
+    setInterval(nextSlide, 10000);  // Change la valeur ici pour ajuster la vitesse
+</script>
+
+           
+    </body>
+    
+           
+        </div>
+        <div class="text-below-carousel">
+            <h2>Comment choisir et poser son parquet</h2>
+          
+            <p>
+                Choisir un parquet pour son intérieur peut sembler compliqué, mais quelques critères simples peuvent vous guider.
+                Tout d'abord, il est important de choisir un parquet en fonction de l'usage de la pièce. Par   exemple, un parquet en bois massif conviendra parfaitement
+                pour un salon ou une chambre, tandis qu'un parquet stratifié ou en vinyle sera plus adapté aux pièces humides comme la cuisine ou la salle de bain.
+            </p>
+            <p>
+                Le type de bois est également un facteur clé. Les bois clairs comme le sapin ou le chêne apportent de la luminosité,
+                tandis que des essences plus sombres comme le noyer ou l'acajou donneront une touche de sophistication. 
+                Pensez également à la finition : un parquet verni est facile à entretenir, alors qu'un parquet huilé donne un aspect plus naturel mais demande plus de soin.
+            </p>
+            <p>
+                En ce qui concerne la pose, il existe différentes méthodes : la pose flottante, où les lames de parquet sont simplement emboîtées entre elles,
+                et la pose collée, qui assure une meilleure stabilité dans le temps. Pour les bricoleurs débutants, la pose flottante est recommandée car elle est plus simple et rapide.
+                Enfin, n'oubliez pas de préparer correctement le sol avant la pose, en le nettoyant et en le nivelant pour garantir un résultat optimal.
+            </p>
+        </div>
+        <style>
+            .text-below-carousel {
+    width: 65%; /* Même largeur que le carrousel pour une continuité visuelle */
+    margin: 15px auto;
+    left: 200px;
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #ffffff;
+}
+</style>
+        <div class="container">
+            <h1>Bleu</h1>
+            <!-- Deuxième image alignée à droite -->
+            <a href="blue.html"><img src="https://th.bing.com/th/id/R.661e8ee862bf259d833dc9a745c33e14?rik=DqpI1cexIbbVgQ&riu=http%3a%2f%2fwww.publicdomainpictures.net%2fpictures%2f40000%2fvelka%2ffondo-color-cian.jpg&ehk=u7yLpl0nTJmiNfHPtC1%2fQ3w77F12sKgEGSQ2hSi5nqA%3d&risl=&pid=ImgRaw&r=0" alt="Emerald Green" width="450" height="200" class="right"></a>
+
+            <!-- Biographie divisée en sections -->
+            <section>
+                
+                <div class="p">
+                   
+                    <style>
+                        .image-right {
+float: right; /* Positionne l'image à droite */
+margin-left: 20px; /* Espace entre l'image et le texte */
+width: 450px;
+height: 200px;
+border-radius: 10px; /* Bordures légèrement arrondies */
+}
+                        
+                        
+                        .container {
+                                     position: relative;
+                                     width: 100%;
+                                    padding: 55px;
+                                        }
+
+                                    .right {
+                                            float: right;
+                                            margin-left: 15px;
+                                            }
+
+
+.text-content {
+    position: absolute;
+    top: -400px;
+    left: 0;
+    right: 450px;
+    text-align: justify; /* Justifier le texte pour compacter */
+    margin: 0 20px; /* Ajout de marges sur les côtés */
+    line-height: 1.5; /* Compacter légèrement les lignes */
+    font-size: 14px; /* Ajuster la taille pour la rendre plus compacte */
+    word-wrap: break-word; /* Casser les longs mots pour éviter le débordement */
+    
+}
+
+                    </style>
+            
+                 </div>
+               
+            </section>
+            <div class="container">
+                <!-- Contenu ici -->
+            </div>
+            
+        </div>
+       
+       
+
+
+</div>
+        
+                   
+                    <style>
+                        .image-right {
+float: right; /* Positionne l'image à droite */
+margin-left: 20px; /* Espace entre l'image et le texte */
+width: 450px;
+height: 200px;
+border-radius: 10px; /* Bordures légèrement arrondies */
+}
+                        
+                        
+                        .container {
+                                     position: relative;
+                                     width: 100%;
+                                    padding: 55px;
+                                        }
+
+                                    .right {
+                                            float: right;
+                                            margin-left: 15px;
+                                            }
+
+
+.text-content {
+    position: absolute;
+    top: 600px;
+    left: 0;
+    right: 450px;
+    text-align: justify; /* Justifier le texte pour compacter */
+    margin: 0 20px; /* Ajout de marges sur les côtés */
+    line-height: 1.5; /* Compacter légèrement les lignes */
+    font-size: 14px; /* Ajuster la taille pour la rendre plus compacte */
+    word-wrap: break-word; /* Casser les longs mots pour éviter le débordement */
+    
+}
+
+                    </style>
+            
+                 </div>
+                 <div class="container">
+                    <h1>Gris</h1>
+                    <!-- Deuxième image alignée à droite -->
+                    <a href="grey.html"><img src="https://www.clicjedecore.com/22133-large_default/papier-peint-uni-gris-perle-hygge-caselio-hyg69869111.jpg" alt="Emerald Green" width="450" height="200" class="right"></a>
+        
+                    <!-- Biographie divisée en sections -->
+                    <section>
+                        
+                        <div class="p">
+                            
+               
+            </section>
+            <div class="container">
+                <!-- Contenu ici -->
+            </div>
+            
+        </div>
+       
+       
+
+
+</div>
+                
+                       
+                        <!-- Autres sections de contenu -->
+                     
+                                    
+                                    <style>
+                                        .image-right {
+    float: right; /* Positionne l'image à droite */
+    margin-left: 20px; /* Espace entre l'image et le texte */
+    width: 450px;
+    height: 200px;
+    border-radius: 10px; /* Bordures légèrement arrondies */
+}
+                                        
+                                        
+                                        .container {
+                                                     position: relative;
+                                                     width: 100%;
+                                                    padding: 55px;
+                                                        }
+                
+                                                    .right {
+                                                            float: right;
+                                                            margin-left: 15px;
+                                                            }
+               
+                
+                .text-content {
+                    position: absolute;
+                    top: 600px;
+                    left: 0;
+                    right: 450px;
+                    text-align: justify; /* Justifier le texte pour compacter */
+                    margin: 0 20px; /* Ajout de marges sur les côtés */
+                    line-height: 1.5; /* Compacter légèrement les lignes */
+                    font-size: 14px; /* Ajuster la taille pour la rendre plus compacte */
+                    word-wrap: break-word; /* Casser les longs mots pour éviter le débordement */
+                    
+                }
+                
+                                    </style>
+                            
+                                 </div>
+                               
+                            </section>
+                            <div class="container">
+                                <!-- Contenu ici -->
+                            </div>
+                            
+                        </div>
+                       
+                       
+               
+          
+        </div>
+    </main>
+
+    <body>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-section about">
+                    <h2>À propos</h2>
+                    <p>Nous sommes une entreprise dédiée à fournir les meilleurs services à nos clients, avec une attention particulière à la qualité et à la satisfaction.</p>
+                </div>
+                <div class="footer-section links">
+                    <h2>Liens utiles</h2>
+                    <ul>
+                        <li><a href="#">Accueil</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">À propos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section contact">
+                    <h2>Contact</h2>
+                    <p>Email: arc-en-cien@gmail.com</p>
+                    <p>Téléphone: +0783212044</p>
+                    <div class="social-icons">
+                        <a href="#"><img src="https://www.pngmart.com/files/23/Facebook-Logo-PNG-Isolated-HD.png" alt="Facebook"></a>
+                        <a href="#"><img src="https://store-images.s-microsoft.com/image/apps.60673.9007199266244427.4d45042b-d7a5-4a83-be66-97779553b24d.5d82b7eb-9734-4b51-b65d-a0383348ab1b" alt="Twitter"></a>
+                        <a href="https://www.instagram.com/arcenciel.peinture/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/1200px-Instagram_logo_2016.svg.png" alt="Instagram"></a>
+                    </div>
+                </div>
+                <div class="footer-section payment">
+                    <h2>Moyens de paiement</h2>
+                    <div class="payment-methods">
+                       <a href="https://www.visa.fr/"><img src="https://cdn.freebiesupply.com/logos/large/2x/visa-2-logo-png-transparent.png" alt="Visa"></a>
+                        <img src="https://logo-marque.com/wp-content/uploads/2020/09/Mastercard-Logo.png" alt="Mastercard">
+                        <a href="https://www.paypal.com/fr/home"><img src="https://logodownload.org/wp-content/uploads/2014/10/paypal-logo-0.png" alt="PayPal"></a>
+                        <!-- Ajoutez d'autres logos de paiement si nécessaire -->
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2024 VotreEntreprise | Tous droits réservés
+            </div>
+        </footer>
+    </body>
+    </html>
+
+   

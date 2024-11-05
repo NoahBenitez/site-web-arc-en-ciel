@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page d'accueil</title>
+    <link rel="stylesheet" href="main.css"> 
+    <style>
+
+        
+
+body {
+            font-family: 'Agency FB', sans-serif;
+        }
+
+
+        /* Applique la police Algerian à tout le texte de la page */
+       
+        .container {
+            margin-bottom: 20px;
+        }
+
+        .right {
+            float: right;
+            margin-left: 20px;
+            border-radius: 8px;
+        }
+
+        section {
+            clear: both;
+        }
+
+        /* Ajouter du style pour le pied de page si nécessaire */
+    </style>
+</head>
+<body>
+    <style>
+        /* Style for the main menu */
+    .sousmenu {
+        list-style-type: none; /* Remove bullets */
+        padding: 0;
+        margin: 0;
+    }
+    
+    /* Style for the nested submenu */
+    .sousmenu li {
+        position: relative; /* Allows absolute positioning of the image */
+    }
+    
+    /* Style for the submenu images */
+    .submenu-img {
+        width: 60px; /* Fixed width for the images */
+        height: 40px; /* Fixed height for the images */
+        position: absolute; /* Absolute positioning */
+        top: 50%; /* Center vertically */
+        right: -70px; /* Position to the right of the submenu item */
+        transform: translateY(-50%); /* Center vertically */
+        border-radius: 5px; /* Rounded corners */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visibility */
+        object-fit: cover; /* Ensures the image covers the area without distortion */
+    }
+    
+    
+    </style>
+   <header class="header">
+    <div class="overlay"></div>
+    <div class="header-content">
+        <h1 class="logo">ARC-EN-CIEL <br> <span>gallery</span></h1>
+        <nav class="navbar">
+            <ul class="menu">
+                <li><a href="Accueil.html">Home</a></li>
+                <li><a href="Peinture.html">Peinture</a>
+                    <ul class="sousmenu">
+                        <li><a href="emerald green.html">Emerald Green</a>
+                            <ul class="sousmenu">
+                                <li><a href="green1.html">Light Green</a></li>
+                                <li><a href="green2.html">Medium Green</a></li>
+                                <li><a href="green3.html">Dark Green</a></li>
+                                <li><a href="green4.html">Olive Green</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="brown.html">Acrylic Brown</a>
+                            <ul class="sousmenu">
+                                <li><a href="brown1.html">Light Brown</a></li>
+                                <li><a href="brown2.html">Medium Brown</a></li>
+                                <li><a href="brown3.html">Dark Brown</a></li>
+                                <li><a href="brown4.html">Burnt Sienna</a></li>
+                               
+                            </ul>
+                        </li>
+                        <li><a href="grey.html">Grey Pearl</a>
+                            <ul class="sousmenu">
+                                <li><a href="grey1.html">Light Grey</a></li>
+                                <li><a href="grey2.html">Medium Grey</a></li>
+                                <li><a href="grey3.html">Dark Grey</a></li>
+                                <li><a href="grey4.html">Slate Grey</a></li>
+                                
+                            </ul>
+                        </li>
+                       
+                       
+                    </ul>
+                </li>
+                <li>
+                    <a href="parquets.html">Parquets</a>
+                    <ul class="sousmenu">
+                        <li>
+                            <a href="sapin.html">Sapin</a>
+                            <ul class="sousmenu">
+                                <li>
+                                    <a href="sapin1.html">Sapin des neiges</a>
+                                    <!-- Image for Sapin des neiges -->
+                                    <img src="https://media.cdn.saint-maclou.com/90755_1_S3.jpg" alt="Emerald Green" class="submenu-img">
+                                </li>
+                                <li>
+                                    <a href="sapin2.html">Sapin classique</a>
+                                    <!-- Image for Sapin classique -->
+                                    <img src="https://media.cdn.saint-maclou.com/90756_1_S3.jpg" alt="Pine Green" class="submenu-img">
+                                </li>
+                                <li>
+                                    <a href="sapin3.html">Sapin forestier</a>
+                                    <!-- Image for Sapin forestier -->
+                                    <img src="https://media.cdn.saint-maclou.com/90757_1_S3.jpg" alt="Forest Green" class="submenu-img">
+                                </li>
+                                <li>
+                                    <a href="sapin4.html">Sapin Blanc clair</a>
+                                    <!-- Image for Sapin forestier -->
+                                    <img src="https://www.cotesol-parquet.com/wp-content/uploads/pin-blanc-clair-universal-brosse-ver-1200x1200.webp" alt="Forest Green" class="submenu-img">
+                                </li>
+                                <li>
+                                    <a href="sapin5.html">Sapin saint-maclou</a>
+                                    <!-- Image for Sapin forestier -->
+                                    <img src="https://forestpanels.com/wp-content/uploads/2022/01/iVALO-21.jpg" alt="Forest Green" class="submenu-img">
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="chene.html">Chene</a></li>
+                        <li><a href="marbre.html">Marbre</a></li>
+                       
+
+                        
+                    </ul>
+                </li>
+                <li><a href="chantier.html">Chantier</a>
+                   
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+                    
+                   
+    <title>Page avec Background Changeant</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font: 12px Arial;
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(139, 69, 19, 0.5), rgba(245, 222, 179, 0.3)), no-repeat center center fixed;
+            background-size: cover;
+            transition: background 1s ease-in-out;
+        }
+    
+        /* Autres styles existants */
+    </style>
+    
+    
+    <style>
+        
+        body {
+            margin: 0;
+            padding: 0;
+            font: 12px Arial;
+            background-size: cover; /* L'image couvrira toute la page */
+            background-position: center; /* L'image sera centrée */
+            background-repeat: no-repeat; /* L'image ne sera pas répétée */
+            transition: background-image 1s ease-in-out; /* Transition douce entre les images */
+        }
+
+        /* Votre style existant pour le corps de la page */
+        /* Autres styles comme dans votre code actuel */
+    </style>
+</head>
+<body>
+
+<!-- Contenu de votre page -->
+<!-- Placez ici le reste de votre code HTML -->
+
+
+    <title>Carousel d'Images</title>
+    <style>
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+
+        .footer-section {
+            flex: 1;
+            margin-right: 20px;
+        }
+
+        .footer-section h2 {
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-section ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer-section ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .social-icons img {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding: 10px;
+            background-color: #222;
+            color: white;
+            font-size: 14px;
+        }
+
+        .payment-methods {
+            display: flex;
+            align-items: center;
+        }
+
+        .payment-methods img {
+            width: 40px; /* Réduit la taille des logos */
+            margin-right: 10px;
+        }
+       </style>
+       
+       
+    <main>
+        <h3>Vous pourrez retrouver ici les différentes peintures de vos choix</h3>
+
+        <div class="container">
+            <h1>Marron</h1>
+         
+            <!-- Deuxième image alignée à droite -->
+            <a href="brown.html"><img src="https://www.apyart.com/1285-thickbox_default/peinture-pour-artiste-marron.jpg" alt="Emerald Green" width="450" height="200" class="right"></a>
+            
+
+
+            <!-- Biographie divisée en sections -->
+            <section>
+            
+                <div class="p">
+                    
+                    
+                    <style>
+                        
+                        .container {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+}
+
+.right {
+    float: right;
+    margin-left: 15px;
+}
+
+.h1 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.text-content {
+    position: absolute;
+    top: 600px;
+    left: 0;
+    right: 450px;
+    text-align: justify; /* Justifier le texte pour compacter */
+    margin: 0 20px; /* Ajout de marges sur les côtés */
+    line-height: 1.5; /* Compacter légèrement les lignes */
+    font-size: 14px; /* Ajuster la taille pour la rendre plus compacte */
+    word-wrap: break-word; /* Casser les longs mots pour éviter le débordement */
+}
+
+                    </style>
+            
+                 </div>
+               
+            </section>
+            <div class="container">
+                <!-- Contenu ici -->
+            </div>
+        </main>
+    </body>
+
+        <div class="container">
+            <h1>Vert</h1>
+
+            <!-- Deuxième image alignée à droite -->
+            <a href="emerald green.html"><img src="https://www.solidbackgrounds.com/images/2880x1800/2880x1800-emerald-solid-color-background.jpg" alt="Emerald Green" width="450" height="200" class="right"></a>
+
+            <!-- Biographie divisée en sections -->
+            <section>
+                
+                <div class="p">
+                   <style>
+                        
+                        .container {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+}
+
+.right {
+    float: right;
+    margin-left: 15px;
+}
+
+.h1 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.text-content {
+    position: absolute;
+    top: 600px;
+    left: 0;
+    right: 450px;
+    text-align: justify; /* Justifier le texte pour compacter */
+    margin: 0 20px; /* Ajout de marges sur les côtés */
+    line-height: 1.5; /* Compacter légèrement les lignes */
+    font-size: 14px; /* Ajuster la taille pour la rendre plus compacte */
+    word-wrap: break-word; /* Casser les longs mots pour éviter le débordement */
+}
+
+                    </style>
+            
+                 </div>
+               
+            </section>
+            <div class="container">
+                <!-- Contenu ici -->
+            </div>
+        </main>
+    </body>
+
+<h1>Chantiers de Maison en Construction</h1>
+
+<div class="section">
+    <h2>Chantiers en Cours</h2>
+    <div class="gallery">
+        <img src="url_image_chantier_1" alt="Chantier 1">
+        <img src="url_image_chantier_2" alt="Chantier 2">
+        <img src="url_image_chantier_3" alt="Chantier 3">
+        <img src="url_image_chantier_4" alt="Chantier 4">
+    </div>
+</div>
+
+<div class="section">
+    <h2>Maisons Terminées</h2>
+    <div class="gallery">
+        <img src="url_image_maison_finie_1" alt="Maison Finie 1">
+        <img src="url_image_maison_finie_2" alt="Maison Finie 2">
+        <img src="url_image_maison_finie_3" alt="Maison Finie 3">
+        <img src="url_image_maison_finie_4" alt="Maison Finie 4">
+    </div>
+</div>
+
+</body>
+</html>

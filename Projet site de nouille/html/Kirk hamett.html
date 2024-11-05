@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page d'accueil</title>
+    <link rel="stylesheet" href="main.css"> 
+</head>
+<body>
+    <header>
+        <nav>
+            <header class="header">
+                <div class="overlay"></div>
+                <div class="header-content">
+                    <h1 class="logo">ARC-EN-CIEL <br> <span>gallery</span></h1>
+                    <nav class="navbar">
+            <ul class="menu">
+                <li><a href="Accueil.html">Home</a></li>
+                <li><a href="Peinture.html">Peinture</a>
+                    <ul class="sousmenu">
+                        <li><a href="Kirk hamett.html">Kirk hamett</a></li>
+                        <li><a href="James hetfield.html">James Hetfield</a></li>
+                        <li><a href="#">Sous-menu 3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Big moments</a>
+                    <ul class="sousmenu">
+                        <li><a href="#">Sous-menu 1</a></li>
+                        <li><a href="#">Sous-menu 2</a></li>
+                        <li><a href="#">Sous-menu 3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Music</a>
+                    <ul class="sousmenu">
+                        <li><a href="#">Sous-menu 1</a></li>
+                        <li><a href="#">Sous-menu 2</a></li>
+                        <li><a href="#">Sous-menu 3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <title>Page avec Background Changeant</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font: 12px Arial;
+            background-size: cover; /* L'image couvrira toute la page */
+            background-position: center; /* L'image sera centrée */
+            background-repeat: no-repeat; /* L'image ne sera pas répétée */
+            transition: background-image 1s ease-in-out; /* Transition douce entre les images */
+        }
+
+        /* Votre style existant pour le corps de la page */
+        /* Autres styles comme dans votre code actuel */
+    </style>
+</head>
+<body>
+
+<!-- Contenu de votre page -->
+<!-- Placez ici le reste de votre code HTML -->
+
+<script>
+    // Tableau des URL des images de fond
+    const backgrounds = [
+        'https://img.freepik.com/photos-premium/explosion-peinture-vibrante-explosion-creativite-coloree-creee-technologie-ia-generative_27525-20448.jpg',
+        'https://ak.picdn.net/shutterstock/videos/24419024/thumb/8.jpg',
+        'https://img.freepik.com/photos-premium/foret-magique-lumiere-soleil_1150-17303.jpg'
+        // Ajoutez d'autres URL d'images ici
+    ];
+
+    let currentBackgroundIndex = 0;
+
+    function changeBackground() {
+        currentBackgroundIndex = (currentBackgroundIndex + 1) % backgrounds.length;
+        document.body.style.backgroundImage = `url(${backgrounds[currentBackgroundIndex]})`;
+    }
+
+    // Change l'image de fond toutes les 5 secondes
+    setInterval(changeBackground, 5000);
+</script>
+    <div class="container">
+        <h4>Guitariste: Kirk Hammet</h4>
+
+        <!-- Première image alignée à droite -->
+        <img src="https://hdwallpaperim.com/wp-content/uploads/2017/08/26/189227-Metallica-Kirk_Hammett.jpg" alt="Guitariste Metallica" width="450" height="200" class="right">
+
+        <!-- Biographie divisée en sections -->
+        <section>
+            <h5>Origines et Jeunesse</h5>
+            <p>Kirk Hammett est né à San Francisco d'une mère originaire des Philippines et d'un père irlandais travaillant dans le transport maritime. Alors qu'il travaillait dans un Burger King pour payer son matériel de musique, Kirk devint élève dans une école de musique dont un des professeurs est le guitariste Joe Satriani.</p>
+        </section>
+
+        <section>
+            <h5>Début de Carrière</h5>
+            <p>Il commence sa carrière de guitariste en 1981 en cofondant le groupe Exodus qu'il quitte en 1983 avant l'enregistrement de leur premier album pour rejoindre Metallica qui vient de renvoyer Dave Mustaine juste avant l'enregistrement de leur premier opus, Kill 'Em All. Dave Mustaine fondera par la suite le groupe Megadeth, qui sera cité dans les « Big Four » du thrash metal.</p>
+        </section>
+
+        <section>
+            <h5>Carrière avec Metallica</h5>
+            <p>Kirk Hammett est depuis le guitariste soliste du groupe. Il a influencé des milliers de guitaristes dans le monde avec son style de solo reconnaissable par son phrasé et sa technique.</p>
+        </section>
+
+       
+    </div>
+    <section>
+        <h5>ANNECDOTE:</h5>
+        <p>Hammett se souvient parfaitement du moment où le bus de tournée de Bowie s’est arrêté et où le musicien emblématique a lancé une invitation avec la chaleur et l’humour qui le caractérisent. “Le bus de tournée arrive, et j’avais vu David Bowie dans une salle de sport plus tôt dans la journée… il s’arrête, la porte s’ouvre, et la tête de David Bowie apparaît et dit : ‘Qu’est-ce que vous faites les gars ? Vous voulez qu’on vous emmène à l’hôtel ?'”, raconte Hammett.
+
+            Le guitariste décrit le comportement de Bowie pendant le trajet comme étant “très drôle, très avenant et très loufoque”, soulignant la joie inattendue et la camaraderie partagées pendant le voyage.
+            
+            La rencontre de Hammett avec Bowie a laissé une impression durable, ce qui l’a incité à revenir sur cette expérience dans un article de blog après le décès de Bowie en 2016. “Je me sentais comme l’un de ces types dans Wayne’s World… ‘Asseyez-vous, asseyez-vous’ [Bowie a dit]. Rob [Trujillo, bassiste de Metallica] et moi nous sommes assis, et une fois de plus le côté fan boy est sorti”, a écrit Hammett, capturant la nature à la fois surréaliste et attachante du moment. <section>
+               
+        
+    </section>
+</main>
+</body>
+<main>
+   

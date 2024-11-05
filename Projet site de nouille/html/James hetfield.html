@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page d'accueil</title>
+    <link rel="stylesheet" href="main.css"> 
+</head>
+<body>
+    <header>
+        <nav>
+            <header class="header">
+                <div class="overlay"></div>
+                <div class="header-content">
+                    <h1 class="logo">ARC-EN-CIEL <br> <span>gallery</span></h1>
+                    <nav class="navbar">
+            <ul class="menu">
+                <li><a href="Accueil.html">Home</a></li>
+                <li><a href="Peinture.html">Peinture</a>
+                    <ul class="sousmenu">
+                        <li><a href="Kirk hamett.html">Kirk hamett</a></li>
+                        <li><a href="James hetfield.html">James Hetfield</a></li>
+                        <li><a href="#">Sous-menu 3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Big moments</a>
+                    <ul class="sousmenu">
+                        <li><a href="#">Sous-menu 1</a></li>
+                        <li><a href="#">Sous-menu 2</a></li>
+                        <li><a href="#">Sous-menu 3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Music</a>
+                    <ul class="sousmenu">
+                        <li><a href="#">Sous-menu 1</a></li>
+                        <li><a href="#">Sous-menu 2</a></li>
+                        <li><a href="#">Sous-menu 3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <title>Page avec Background Changeant</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font: 12px Arial;
+            background-size: cover; /* L'image couvrira toute la page */
+            background-position: center; /* L'image sera centrée */
+            background-repeat: no-repeat; /* L'image ne sera pas répétée */
+            transition: background-image 1s ease-in-out; /* Transition douce entre les images */
+        }
+
+        /* Votre style existant pour le corps de la page */
+        /* Autres styles comme dans votre code actuel */
+    </style>
+</head>
+<body>
+
+<!-- Contenu de votre page -->
+<!-- Placez ici le reste de votre code HTML -->
+
+<script>
+    // Tableau des URL des images de fond
+    const backgrounds = [
+        'https://img.freepik.com/photos-premium/explosion-peinture-vibrante-explosion-creativite-coloree-creee-technologie-ia-generative_27525-20448.jpg',
+        'https://ak.picdn.net/shutterstock/videos/24419024/thumb/8.jpg',
+        'https://img.freepik.com/photos-premium/foret-magique-lumiere-soleil_1150-17303.jpg'
+        // Ajoutez d'autres URL d'images ici
+    ];
+
+    let currentBackgroundIndex = 0;
+
+    function changeBackground() {
+        currentBackgroundIndex = (currentBackgroundIndex + 1) % backgrounds.length;
+        document.body.style.backgroundImage = `url(${backgrounds[currentBackgroundIndex]})`;
+    }
+
+    // Change l'image de fond toutes les 5 secondes
+    setInterval(changeBackground, 5000);
+</script>
+    <div class="container">
+        <h4>Guitariste: Kirk Hammet</h4>
+
+        <!-- Première image alignée à droite -->
+        <img src="https://cdn.vox-cdn.com/thumbor/xAMplYyTy6rPiCLECo9PfrfNcsI=/0x0:1200x630/1200x800/filters:focal(504x219:696x411)/cdn.vox-cdn.com/uploads/chorus_image/image/63514906/metallica_061917_01.0.jpg" alt="Guitariste Metallica" width="450" height="200" class="right">
+
+        <!-- Biographie divisée en sections -->
+        <section>
+            <h5>Origines et Jeunesse</h5>
+            <p>James Alan Hetfield, né le 3 août 1963 à Downey, en Californie, est le fils d'un chauffeur de poids lourds du Nebraska et d'une chanteuse professionnelle, tous deux très croyants et membres de la Science chrétienne. Sa famille compte des ascendances anglaises, irlandaises, écossaises, et allemandes[réf. nécessaire].
+
+                La mort de sa mère, lorsqu'il est adolescent, le marque profondément. Il évoque d'ailleurs cette tragédie dans The God That Failed sur l'album Metallica, puis dans Mama Said sur l'album Load. C'est grâce à son frère David, son aîné de dix ans, qu'il s'initie à la guitare et accessoirement à la batterie. David Hetfield devient batteur et guitariste dans un groupe amateur spécialisé dans les reprises. James avait également pris quelques leçons de piano sous la pression de sa mère. N'étant guère disposé à suivre de longues études, James fait quantité de petits boulots tout en jouant dans d'éphémères formations locales (Obsession, Phantom Lord d'où le titre d'un morceau de Metallica...).</p>
+        </section>
+
+        <section>
+            <h5>Début de Carrière</h5>
+            <p>Son premier groupe sérieux est Leather Charm, jusqu’à sa rencontre avec Lars Ulrich par l'entremise d'une annonce postée dans le journal The Recycler.
+
+                Lars a des contacts dans le monde du heavy metal, un de ses amis produit une compilation qui met en vedette des groupes locaux. Son ami accepte de lui garder une place sur l'album, mais Lars n'a pas encore de groupe. La volonté de James de vouloir paraître sur cet album lui fait accepter de former un groupe avec Lars, Metallica est né.
+                
+                Le 26 juin 1986, victime d'un accident de skateboard, Hetfield se fracture le poignet. Il ne peut que chanter et se fait remplacer par John Marshall, un roadie de Metallica. </p>
+        </section>
+
+        <section>
+            <h5>Carrière avec Metallica</h5>
+            <p> La volonté de James de vouloir paraître sur cet album lui fait accepter de former un groupe avec Lars, Metallica est né.
+
+                Le 26 juin 1986, victime d'un accident de skateboard, Hetfield se fracture le poignet. Il ne peut que chanter et se fait remplacer par John Marshall, un roadie de Metallica.
+                
+                Le 8 août 1992, il subit un nouvel accident au stade olympique de Montréal lorsqu'un effet pyrotechnique explose littéralement sous ses pieds. James gravement brûlé à la main, au bras gauche, au visage et au dos, est rapidement transporté à l'hôpital. Guns N' Roses est en seconde partie de ce concert</p>
+        </section>
+    </div>
+</main>
+</body>
+<main>
